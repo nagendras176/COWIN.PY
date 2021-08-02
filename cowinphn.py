@@ -3,7 +3,7 @@ import time as time
 import datetime as date
 import asyncio
 from sys import argv
-from playsound import playsound
+#from playsound import playsound
 
 
 def num_cor(num):
@@ -46,8 +46,8 @@ def check_iterate():
             print("*******************************************************************************")
             print("VACCINE IS AVAILABLE ON ::"+i+" PINCODE :"+pincode)
             print("********************************************************************************")
-           # os.system('play-audio Avg.mp3') 
-            playsound("./Avg.mp3")
+            os.system('mpg123 Avg.mp3') 
+           
           else:
             print("Not available on :"+i)
       
